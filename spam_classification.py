@@ -117,7 +117,6 @@ tdm_transformer = TDM(training_vocabulary)
 training_tdm = tdm_transformer.transform(training_lines)
 testing_tdm = tdm_transformer.transform(testing_lines)
 
-# Assuming you have labels for both training and testing data
 training_labels = [text_preprocessing.getMessageTag(line) for line in open(INPUT_TRAINING_FILE_NAME, 'r', encoding='utf-8').readlines()]
 testing_labels = [text_preprocessing.getMessageTag(line) for line in open(INPUT_TESTING_FILE_NAME, 'r', encoding='utf-8').readlines()]
 
