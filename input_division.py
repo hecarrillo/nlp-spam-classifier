@@ -13,8 +13,10 @@ with open(INPUT_FILE_NAME, 'r', encoding='windows-1252') as input_file:
 
     with open(OUTPUT_TRAINING, 'w') as output_training:
         for line in training_lines:
+            # parse line to utf-8
             output_training.write(line)
 
     with open(OUTPUT_TESTING, 'w') as output_testing:
         for line in testing_lines:
+            # parse line to utf-8
             output_testing.write(line)
