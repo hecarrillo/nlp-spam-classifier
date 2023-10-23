@@ -65,7 +65,7 @@ class TDM:
 
 # Custom Logistic Regression
 class LogisticRegressionCustom:
-    def __init__(self, learning_rate=0.1, n_iterations=5000):
+    def __init__(self, learning_rate=0.3, n_iterations=5000):
         self.learning_rate = learning_rate
         self.n_iterations = n_iterations
         self.weights = None
